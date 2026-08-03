@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hummingbird AI Studio — AI Agent Build Week</title>
+    <meta name="description" content="Hummingbird AI Studio builds working AI agents for founders and businesses in one week. Book your AI Agent Build Week." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Cormorant Garamond', 'serif'],
+            },
+            colors: {
+              hummingbird: {
+                teal: '#0d9488',
+                emerald: '#10b981',
+                violet: '#8b5cf6',
+                indigo: '#1e1b4b',
+                slate: '#0f172a',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .gradient-text {
+        background: linear-gradient(135deg, #0d9488 0%, #10b981 50%, #8b5cf6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .gradient-bg {
+        background: linear-gradient(135deg, #0d9488 0%, #10b981 50%, #8b5cf6 100%);
+      }
+      .feature-card:hover .feature-icon {
+        transform: scale(1.1) rotate(2deg);
+      }
+      .feature-icon {
+        transition: transform 0.3s ease;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-hummingbird-slate font-sans antialiased">
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md border-b border-slate-200 z-50">
+      <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        <a href="/" class="text-2xl font-display font-semibold tracking-tight text-hummingbird-indigo">Hummingbird</a>
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+          <a href="/" class="hover:text-hummingbird-teal transition-colors">Home</a>
+          <a href="/ai" class="text-hummingbird-teal">AI Studio</a>
+          <a href="/#focus" class="hover:text-hummingbird-teal transition-colors">Focus</a>
+          <a href="/#about" class="hover:text-hummingbird-teal transition-colors">About</a>
+          <a href="#book" class="hover:text-hummingbird-teal transition-colors">Book</a>
+        </div>
+        <a href="#book" class="hidden md:inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-white gradient-bg rounded-full hover:shadow-lg hover:shadow-teal-500/25 transition-all">Book Build Week</a>
+      </div>
+    </nav>
+
+    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+      <div class="absolute inset-0 -z-10 opacity-30">
+        <div class="absolute top-20 left-10 w-72 h-72 bg-emerald-300 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-violet-300 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-teal-200 rounded-full blur-3xl"></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-6 py-24 md:py-32">
+        <div class="max-w-4xl">
+          <p class="text-sm font-semibold tracking-widest text-hummingbird-teal uppercase mb-6">Hummingbird AI Studio</p>
+          <h1 class="text-5xl md:text-7xl lg:text-8xl font-display font-semibold leading-[1.1] text-hummingbird-indigo mb-8">
+            A working AI agent in <span class="gradient-text">one week</span>.
+          </h1>
+          <p class="text-xl md:text-2xl text-slate-600 leading-relaxed max-w-2xl mb-10">
+            For founders, family offices, and operators who want to stop drowning in repetitive work and start delegating it to an AI agent that actually runs.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#book" class="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white gradient-bg rounded-full hover:shadow-xl hover:shadow-teal-500/30 transition-all">Book your Build Week</a>
+            <a href="#deliverable" class="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-hummingbird-indigo bg-white border border-slate-200 rounded-full hover:border-hummingbird-teal hover:text-hummingbird-teal transition-all">See what you get</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl mx-auto text-center mb-16">
+          <p class="text-sm font-semibold tracking-widest text-hummingbird-teal uppercase mb-4">The problem</p>
+          <h2 class="text-4xl md:text-5xl font-display font-semibold text-hummingbird-indigo mb-6">You are the bottleneck.</h2>
+          <p class="text-lg text-slate-600 leading-relaxed">Your team is busy copying data, writing follow-ups, chasing documents, and answering the same questions. The work is urgent but not strategic. It costs you time, money, and focus.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="feature-card group p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-hummingbird-teal/30 hover:shadow-xl hover:shadow-teal-500/5 transition-all">
+            <div class="feature-icon w-14 h-14 mb-6 gradient-bg rounded-2xl flex items-center justify-center text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3 class="text-2xl font-display font-semibold text-hummingbird-indigo mb-3">Hours disappear</h3>
+            <p class="text-slate-600">Email, scheduling, data entry, and status updates eat the day before real work begins.</p>
+          </div>
+          <div class="feature-card group p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-hummingbird-teal/30 hover:shadow-xl hover:shadow-teal-500/5 transition-all">
+            <div class="feature-icon w-14 h-14 mb-6 gradient-bg rounded-2xl flex items-center justify-center text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="text-2xl font-display font-semibold text-hummingbird-indigo mb-3">Talent is expensive</h3>
+            <p class="text-slate-600">Hiring another assistant or junior operator is slow, costly, and does not fix the root cause.</p>
+          </div>
+          <div class="feature-card group p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-hummingbird-teal/30 hover:shadow-xl hover:shadow-teal-500/5 transition-all">
+            <div class="feature-icon w-14 h-14 mb-6 gradient-bg rounded-2xl flex items-center justify-center text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            </div>
+            <h3 class="text-2xl font-display font-semibold text-hummingbird-indigo mb-3">Opportunities are missed</h3>
+            <p class="text-slate-600">Speed, follow-up, and consistency suffer when humans have to remember everything.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="deliverable" class="py-24 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <p class="text-sm font-semibold tracking-widest text-hummingbird-teal uppercase mb-4">The solution</p>
+            <h2 class="text-4xl md:text-5xl font-display font-semibold text-hummingbird-indigo mb-6">The AI Agent Build Week</h2>
+            <p class="text-lg text-slate-600 leading-relaxed mb-6">In five business days we design, build, and hand off a working AI agent connected to your real systems. You get a tool that runs on day one, not a slide deck.</p>
+            <ul class="space-y-4 text-slate-600">
+              <li class="flex items-start gap-3">
+                <span class="inline-flex w-6 h-6 flex-shrink-0 gradient-bg rounded-full items-center justify-center text-white text-xs">1</span>
+                <span><strong>Day 1 — Discovery:</strong> we map your highest-leverage workflow in a 60-minute call.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="inline-flex w-6 h-6 flex-shrink-0 gradient-bg rounded-full items-center justify-center text-white text-xs">2</span>
+                <span><strong>Days 2–4 — Build:</strong> we wire up the agent, data sources, prompts, and hand-off points.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="inline-flex w-6 h-6 flex-shrink-0 gradient-bg rounded-full items-center justify-center text-white text-xs">3</span>
+                <span><strong>Day 5 — Handoff:</strong> live demo, documentation, and 30 days of support.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="p-8 rounded-3xl bg-white border border-slate-200 shadow-xl shadow-slate-200/50">
+            <h3 class="text-2xl font-display font-semibold text-hummingbird-indigo mb-6">Typical agents we build</h3>
+            <div class="space-y-4 text-slate-600">
+              <div class="flex items-start gap-4">
+                <div class="w-2 h-2 mt-2 rounded-full gradient-bg"></div>
+                <span>Lead intake and automated follow-up</span>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-2 h-2 mt-2 rounded-full gradient-bg"></div>
+                <span>Document summarization and extraction</span>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-2 h-2 mt-2 rounded-full gradient-bg"></div>
+                <span>Calendar, email, and CRM workflow automation</span>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-2 h-2 mt-2 rounded-full gradient-bg"></div>
+                <span>Research and reporting agents</span>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-2 h-2 mt-2 rounded-full gradient-bg"></div>
+                <span>Internal knowledge-base assistants</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="book" class="py-24 bg-hummingbird-indigo text-white">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <p class="text-sm font-semibold tracking-widest text-hummingbird-teal uppercase mb-4">Pricing</p>
+        <h2 class="text-4xl md:text-5xl font-display font-semibold mb-6">$4,500 — one working agent, delivered in 5 days</h2>
+        <p class="text-lg text-slate-300 mb-10 max-w-2xl mx-auto">Everything included: discovery, build, documentation, and 30 days of support. No hourly billing. No surprises.</p>
+
+        <div class="grid md:grid-cols-2 gap-6 text-left mb-10">
+          <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
+            <h4 class="text-xl font-display font-semibold mb-3">What is included</h4>
+            <ul class="space-y-2 text-slate-300">
+              <li>60-minute workflow discovery</li>
+              <li>One production-ready AI agent</li>
+              <li>Connection to up to 3 tools or data sources</li>
+              <li>Written runbook and prompt library</li>
+              <li>30 days of support and tweaks</li>
+            </ul>
+          </div>
+          <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
+            <h4 class="text-xl font-display font-semibold mb-3">Best for</h4>
+            <ul class="space-y-2 text-slate-300">
+              <li>Founders wearing too many hats</li>
+              <li>Family offices managing inbound flow</li>
+              <li>Small teams in solar, real estate, or services</li>
+              <li>Anyone who wants to prove AI ROI in one week</li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="mailto:hello@hummingbirdinc.io?subject=Book%20AI%20Agent%20Build%20Week&amp;body=Tell%20us%20about%20your%20business%20and%20the%20work%20you%20want%20an%20AI%20agent%20to%20handle." class="inline-flex items-center justify-center px-10 py-4 text-lg font-medium text-hummingbird-indigo bg-white rounded-full hover:bg-slate-100 transition-all">Book your Build Week</a>
+        <p class="mt-6 text-sm text-slate-400">Services billed through American Eagle Ventures LLC. We will reply within one business day.</p>
+      </div>
+    </section>
+
+    <section class="py-24 bg-white">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-display font-semibold text-hummingbird-indigo mb-8 text-center">Frequently asked questions</h2>
+        <div class="space-y-6 text-slate-600">
+          <div>
+            <h4 class="text-lg font-semibold text-hummingbird-indigo mb-2">Do I need to be technical?</h4>
+            <p>No. We handle the build and hand you a simple interface. If you can use email and a spreadsheet, you can use the agent.</p>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold text-hummingbird-indigo mb-2">What tools can the agent connect to?</h4>
+            <p>Most modern tools with APIs: Gmail, Google Sheets, Notion, Airtable, HubSpot, Salesforce, Slack, Calendly, Stripe, and many more.</p>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold text-hummingbird-indigo mb-2">What if I do not know which workflow to automate?</h4>
+            <p>That is exactly what the discovery call is for. We will identify the highest-ROI 30-minute task and build around it.</p>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold text-hummingbird-indigo mb-2">Is my data safe?</h4>
+            <p>Yes. We use private infrastructure, encrypted connections, and your data is never used to train third-party models without permission.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-12 bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        <a href="/" class="text-2xl font-display font-semibold text-hummingbird-indigo">Hummingbird Inc</a>
+        <p class="text-sm text-slate-500">Services billed through American Eagle Ventures LLC.</p>
+      </div>
+    </footer>
+  </body>
+</html>
