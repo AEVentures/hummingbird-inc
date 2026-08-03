@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hummingbird Inc — Systems for Life</title>
+    <meta name="description" content="Hummingbird Inc is a venture group advancing AI, solar, robotics, natural healing, CRISPR gene editing, and rare earth minerals." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Cormorant Garamond', 'serif'],
+            },
+            colors: {
+              hummingbird: {
+                teal: '#0d9488',
+                emerald: '#10b981',
+                violet: '#8b5cf6',
+                indigo: '#1e1b4b',
+                slate: '#0f172a',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .gradient-text {
+        background: linear-gradient(135deg, #0d9488 0%, #10b981 50%, #8b5cf6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .gradient-bg {
+        background: linear-gradient(135deg, #0d9488 0%, #10b981 50%, #8b5cf6 100%);
+      }
+      .focus-card:hover .focus-icon {
+        transform: scale(1.1) rotate(2deg);
+      }
+      .focus-icon {
+        transition: transform 0.3s ease;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-hummingbird-slate font-sans antialiased">
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md border-b border-slate-200 z-50">
+      <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        <a href="#" class="text-2xl font-display font-semibold tracking-tight text-hummingbird-indigo">Hummingbird</a>
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+          <a href="#focus" class="hover:text-hummingbird-teal transition-colors">Focus</a>
+          <a href="#about" class="hover:text-hummingbird-teal transition-colors">About</a>
+          <a href="#contact" class="hover:text-hummingbird-teal transition-colors">Contact</a>
+        </div>
+        <a href="#contact" class="hidden md:inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-white gradient-bg rounded-full hover:shadow-lg hover:shadow-teal-500/25 transition-all">Start a conversation</a>
+      </div>
+    </nav>
+
+    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+      <div class="absolute inset-0 -z-10 opacity-30">
+        <div class="absolute top-20 left-10 w-72 h-72 bg-emerald-300 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-violet-300 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-teal-200 rounded-full blur-3xl"></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-6 py-24 md:py-32">
+        <div class="max-w-4xl">
+          <p class="text-sm font-semibold tracking-widest text-hummingbird-teal uppercase mb-6">Systems for Life</p>
+          <h1 class="text-5xl md:text-7xl lg:text-8xl font-display font-semibold leading-[1.1] text-hummingbird-indigo mb-8">
+            Hummingbird <span class="gradient-text">Inc</span>
+          </h1>
+          <p class="text-xl md:text-2xl text-slate-600 leading-relaxed max-w-2xl mb-10">
+            One company built to accelerate the technologies the world needs most — from artificial intelligence and solar power to CRISPR, robotics, natural healing, and the rare earth minerals that make it all possible.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#focus" class="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white gradient-bg rounded-full hover:shadow-xl hover:shadow-teal-500/30 transition-all">Explore our focus</a>
+            <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-hummingbird-indigo bg-white border border-slate-200 rounded-full hover:border-hummingbird-teal hover:text-hummingbird-teal transition-all">Partner with us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="focus" class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl mb-16">
+          <p class="text-sm font-semibold tracking-widest text-hummingbird-teal uppercase mb-4">What we are building</p>
+          <h2 class="text-4xl md:text-5xl font-display font-semibold text-hummingbird-indigo mb-6">Six foundations for the next century</h2>
+          <p class="text-lg text-slate-600">We are bringing intellectual property, capital, and vision into a single brand that operates across these domains in order of priority.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article class="focus-card group p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-hummingbird-teal/30 hover:shadow-xl hover:shadow-teal-500/5 transition-all">
+            <div class="focus-icon w-14 h-14 mb-6 gradient-bg rounded-2xl flex items-center justify-center text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5c0-2 2-3 4-3.5"/><path d="M9 13.5c2.5 2 5 2 7.5 0"/><path d="M14 11c.5.5.5 1.5 0 2"/></svg>
+            </div>
+            <h3 class="text-2xl font-display font-semibold text-hummingbird-indigo mb-3">Artificial Intelligence</h3>
+            <p class="text-slate-600 leading-relaxed">Agentic systems, reasoning infrastructure, and AI-native products that increase human capability across every operating company.</p>
+          </article>
+
+          <article class="focus-card group p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-hummingbird-teal/30 hover:shadow-xl hover:shadow-teal-500/5 transition-all">
+            <div class="focus-icon w-14 h-14 mb-6 gradient-bg rounded-2xl flex items-center justify-center text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2"/><path d="M12 21v2"/><path d="M4.22 4.22l1.42 1.42"/><path d="M18.36 18.36l1.42 1.42"/><path d="M1 12h2"/><path d="M21 12h2"/><path d="M4.22 19.78l1.42-1.42"/><path d="M18.36 5.64l1.42-1.42"/></svg>
+            </div>
+            <h3 class="text-2xl font-display font-semibold text-hummingbird-indigo mb-3">Solar</h3>
+            <p class="text-slate-600 leading-relaxed">Next-generation generation, storage, and distribution platforms that make clean, abundant energy the default economic choice.</p>
+          </article>
+
+          <article class="focus-card group p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-hummingbird-teal/30 hover:shadow-xl hover:shadow-teal-500/5 transition-all">
+            <div class="focus-icon w-14 h-14 mb-6 gradient-bg rounded-2xl flex items-center justify-center text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l-2.5 7h-7L8 12.5 6.5 20 12 16l5.5 4-1.5-7.5L22 9h-7L12 2z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3 class="text-2xl font-display font-semibold text-hummingbird-indigo mb-3">Robotics</h3>
+            <p class="text-slate-600 leading-relaxed">Physical automation for manufacturing, logistics, elder care, and environments where precision, endurance, and safety matter.</p>
+          </article>
+
+          <article class="focus-card group p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-hummingbird-teal/30 hover:shadow-xl hover:shadow-teal-500/5 transition-all">
+            <div class="focus-icon w-14 h-14 mb-6 gradient-bg rounded-2xl flex items-center justify-center text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h3 class="text-2xl font-display font-semibold text-hummingbird-indigo mb-3">Natural Healing</h3>
+            <p class="text-slate-600 leading-relaxed">Evidence-based therapeutics, bioactive compounds, and holistic health systems that restore and protect human vitality.</p>
+          </article>
+
+          <article class="focus-card group p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-hummingbird-teal/30 hover:shadow-xl hover:shadow-teal-500/5 transition-all">
+            <div class="focus-icon w-14 h-14 mb-6 gradient-bg rounded-2xl flex items-center justify-center text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 14l9-9"/><path d="M17.5 3.5l-2.5 2.5"/><path d="M20.5 6.5l-2.5 2.5"/><path d="M15 9l-2.5 2.5"/></svg>
+            </div>
+            <h3 class="text-2xl font-display font-semibold text-hummingbird-indigo mb-3">CRISPR / Gene Editing</h3>
+            <p class="text-slate-600 leading-relaxed">Programmable biology for inherited disease, oncology, and the safe, equitable application of genomic medicine.</p>
+          </article>
+
+          <article class="focus-card group p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-hummingbird-teal/30 hover:shadow-xl hover:shadow-teal-500/5 transition-all">
+            <div class="focus-icon w-14 h-14 mb-6 gradient-bg rounded-2xl flex items-center justify-center text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 10h20"/><path d="M2 14h20"/><path d="M5 7c0-1.7 1.3-3 3-3h8c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H8c-1.7 0-3-1.3-3-3V7z"/><path d="M8 17h.01"/><path d="M16 17h.01"/><path d="M12 7h.01"/></svg>
+            </div>
+            <h3 class="text-2xl font-display font-semibold text-hummingbird-indigo mb-3">Rare Earth Minerals</h3>
+            <p class="text-slate-600 leading-relaxed">Strategic sourcing, processing, and recycling of the critical materials that power AI, defense, energy, and space systems.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-24 bg-hummingbird-indigo text-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <p class="text-sm font-semibold tracking-widest text-hummingbird-teal uppercase mb-4">One company, one mission</p>
+            <h2 class="text-4xl md:text-5xl font-display font-semibold mb-6">Bringing every asset under one brand</h2>
+            <p class="text-lg text-slate-300 leading-relaxed mb-6">
+              Hummingbird Inc unifies IP, real estate, capital, and operating companies into a single, scalable platform. The brand is designed to attract partners, investors, talent, and customers across every domain we touch.
+            </p>
+            <p class="text-lg text-slate-300 leading-relaxed">
+              We move fast, think long-term, and invest in the hard technologies that improve human life and secure the future.
+            </p>
+          </div>
+          <div class="grid gap-6">
+            <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
+              <h4 class="text-xl font-display font-semibold mb-2">Capital efficient</h4>
+              <p class="text-slate-300">Shared infrastructure, shared intelligence, and shared brand leverage across every operating asset.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
+              <h4 class="text-xl font-display font-semibold mb-2">Technology first</h4>
+              <p class="text-slate-300">AI is woven into each vertical: not as a side project, but as the operating system of the company.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
+              <h4 class="text-xl font-display font-semibold mb-2">Built to last</h4>
+              <p class="text-slate-300">Long-horizon ownership, ethical governance, and regenerative business models are core to how we operate.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-slate-50">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <p class="text-sm font-semibold tracking-widest text-hummingbird-teal uppercase mb-4">Get involved</p>
+        <h2 class="text-4xl md:text-5xl font-display font-semibold text-hummingbird-indigo mb-6">Let&apos;s build the future, together.</h2>
+        <p class="text-lg text-slate-600 mb-10">Whether you are an investor, operator, scientist, engineer, or potential customer, we want to hear from you.</p>
+        <a href="mailto:contact@hummingbirdinc.io" class="inline-flex items-center justify-center px-10 py-4 text-lg font-medium text-white gradient-bg rounded-full hover:shadow-xl hover:shadow-teal-500/30 transition-all">Email Hummingbird Inc</a>
+        <p class="mt-6 text-sm text-slate-500">The contact address will be updated once the final domain is selected and configured.</p>
+      </div>
+    </section>
+
+    <footer class="py-12 bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        <p class="text-2xl font-display font-semibold text-hummingbird-indigo">Hummingbird Inc</p>
+        <p class="text-sm text-slate-500">&copy; 2026 Hummingbird Inc. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
