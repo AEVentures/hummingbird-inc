@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free AI Audit — Hummingbird AI Studio</title>
+    <meta name="description" content="Book a free 20-minute AI audit. Hummingbird AI Studio will identify one workflow in your business that an AI agent can handle immediately." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Cormorant Garamond', 'serif'],
+            },
+            colors: {
+              hummingbird: {
+                teal: '#0d9488',
+                emerald: '#10b981',
+                violet: '#8b5cf6',
+                indigo: '#1e1b4b',
+                slate: '#0f172a',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .gradient-text {
+        background: linear-gradient(135deg, #0d9488 0%, #10b981 50%, #8b5cf6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .gradient-bg {
+        background: linear-gradient(135deg, #0d9488 0%, #10b981 50%, #8b5cf6 100%);
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-hummingbird-slate font-sans antialiased">
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md border-b border-slate-200 z-50">
+      <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        <a href="/" class="text-2xl font-display font-semibold tracking-tight text-hummingbird-indigo">Hummingbird</a>
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+          <a href="/" class="hover:text-hummingbird-teal transition-colors">Home</a>
+          <a href="/ai" class="hover:text-hummingbird-teal transition-colors">AI Studio</a>
+          <a href="/ai/audit" class="text-hummingbird-teal">Free Audit</a>
+          <a href="/ai/blueprint" class="hover:text-hummingbird-teal transition-colors">Blueprint</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+      <div class="absolute inset-0 -z-10 opacity-30">
+        <div class="absolute top-20 left-10 w-72 h-72 bg-emerald-300 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-violet-300 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-teal-200 rounded-full blur-3xl"></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-6 py-24 md:py-32">
+        <div class="max-w-3xl mx-auto text-center">
+          <p class="text-sm font-semibold tracking-widest text-hummingbird-teal uppercase mb-6">Free 20-Minute AI Audit</p>
+          <h1 class="text-5xl md:text-7xl font-display font-semibold leading-[1.1] text-hummingbird-indigo mb-8">
+            Find your first <span class="gradient-text">AI agent</span> in 20 minutes.
+          </h1>
+          <p class="text-xl md:text-2xl text-slate-600 leading-relaxed mb-10">
+            I will identify one workflow in your business that an AI agent can take over immediately. No pitch, no obligation, just a clear map of what is possible.
+          </p>
+
+          <div class="grid md:grid-cols-3 gap-6 text-left mb-12">
+            <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+              <h3 class="text-lg font-semibold text-hummingbird-indigo mb-2">1. You describe the work</h3>
+              <p class="text-slate-600">Tell me what you or your team repeat, stall on, or wish ran automatically.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+              <h3 class="text-lg font-semibold text-hummingbird-indigo mb-2">2. I map the agent</h3>
+              <p class="text-slate-600">I will identify the highest-ROI workflow and sketch what the first version looks like.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+              <h3 class="text-lg font-semibold text-hummingbird-indigo mb-2">3. You get a clear next step</h3>
+              <p class="text-slate-600">Leave with a written summary and a no-pressure path to a working agent in one week.</p>
+            </div>
+          </div>
+
+          <a href="mailto:hello@hummingbirdinc.io?subject=Free%20AI%20Audit%20Request&body=Hi%20Michael%2C%0A%0AI%20would%20like%20to%20book%20a%20free%2020-minute%20AI%20audit.%0A%0AMy%20business%3A%20%0AMy%20biggest%20repetitive%20task%3A%20%0ABest%20time%20to%20connect%3A%20%0A%0AThank%20you%2C%0A" class="inline-flex items-center justify-center px-10 py-4 text-lg font-medium text-white gradient-bg rounded-full hover:shadow-xl hover:shadow-teal-500/30 transition-all">Request your free AI audit</a>
+          <p class="mt-6 text-sm text-slate-500">Email hello@hummingbirdinc.io with the subject "Free AI Audit Request" and we will reply within one business day.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-white border-t border-slate-200">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-display font-semibold text-hummingbird-indigo mb-8 text-center">Who this is for</h2>
+        <div class="grid md:grid-cols-2 gap-6 text-slate-600">
+          <div class="p-6 rounded-2xl bg-slate-50">
+            <h4 class="text-lg font-semibold text-hummingbird-indigo mb-2">Founders wearing too many hats</h4>
+            <p>You are doing work that should not require you.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-slate-50">
+            <h4 class="text-lg font-semibold text-hummingbird-indigo mb-2">Family offices and investment firms</h4>
+            <p>Reporting, research, and memo workflows that eat analyst time.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-slate-50">
+            <h4 class="text-lg font-semibold text-hummingbird-indigo mb-2">Service businesses and operators</h4>
+            <p>Lead intake, scheduling, follow-up, and document chasing.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-slate-50">
+            <h4 class="text-lg font-semibold text-hummingbird-indigo mb-2">Small teams in solar, real estate, or healthcare</h4>
+            <p>Repetitive processes that slow down growth.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-12 bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        <a href="/" class="text-2xl font-display font-semibold text-hummingbird-indigo">Hummingbird Inc</a>
+        <p class="text-sm text-slate-500">Services billed through American Eagle Ventures LLC.</p>
+      </div>
+    </footer>
+  </body>
+</html>

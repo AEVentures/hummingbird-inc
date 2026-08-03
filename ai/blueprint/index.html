@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The 10-Minute AI Agent Blueprint — Hummingbird Inc</title>
+    <meta name="description" content="A free blueprint for identifying, designing, and deploying your first AI agent in one week." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Cormorant Garamond', 'serif'],
+            },
+            colors: {
+              hummingbird: {
+                teal: '#0d9488',
+                emerald: '#10b981',
+                violet: '#8b5cf6',
+                indigo: '#1e1b4b',
+                slate: '#0f172a',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .gradient-text {
+        background: linear-gradient(135deg, #0d9488 0%, #10b981 50%, #8b5cf6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .gradient-bg {
+        background: linear-gradient(135deg, #0d9488 0%, #10b981 50%, #8b5cf6 100%);
+      }
+      .prose h2 {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.875rem;
+        font-weight: 600;
+        color: #1e1b4b;
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+      }
+      .prose p {
+        margin-bottom: 1rem;
+        line-height: 1.75;
+      }
+      .prose ul {
+        margin-bottom: 1.5rem;
+        padding-left: 1.5rem;
+        list-style-type: disc;
+      }
+      .prose li {
+        margin-bottom: 0.5rem;
+      }
+      .prose table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 1.5rem;
+      }
+      .prose th, .prose td {
+        border: 1px solid #e2e8f0;
+        padding: 0.75rem;
+        text-align: left;
+      }
+      .prose th {
+        background-color: #f8fafc;
+        font-weight: 600;
+      }
+      .prose code {
+        background-color: #f1f5f9;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.25rem;
+        font-family: monospace;
+        font-size: 0.875rem;
+      }
+      .prose pre {
+        background-color: #1e1b4b;
+        color: #f8fafc;
+        padding: 1.25rem;
+        border-radius: 0.75rem;
+        overflow-x: auto;
+        margin-bottom: 1.5rem;
+      }
+      .prose pre code {
+        background-color: transparent;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-hummingbird-slate font-sans antialiased">
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md border-b border-slate-200 z-50">
+      <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        <a href="/" class="text-2xl font-display font-semibold tracking-tight text-hummingbird-indigo">Hummingbird</a>
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+          <a href="/" class="hover:text-hummingbird-teal transition-colors">Home</a>
+          <a href="/ai" class="hover:text-hummingbird-teal transition-colors">AI Studio</a>
+          <a href="/ai/audit" class="hover:text-hummingbird-teal transition-colors">Free Audit</a>
+          <a href="/ai/blueprint" class="text-hummingbird-teal">Blueprint</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="relative pt-32 pb-16 overflow-hidden">
+      <div class="absolute inset-0 -z-10 opacity-30">
+        <div class="absolute top-20 left-10 w-72 h-72 bg-emerald-300 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-violet-300 rounded-full blur-3xl"></div>
+      </div>
+      <div class="max-w-3xl mx-auto px-6">
+        <p class="text-sm font-semibold tracking-widest text-hummingbird-teal uppercase mb-4">Free Resource</p>
+        <h1 class="text-4xl md:text-6xl font-display font-semibold text-hummingbird-indigo mb-6">
+          The 10-Minute AI Agent <span class="gradient-text">Blueprint</span>
+        </h1>
+        <p class="text-xl text-slate-600 leading-relaxed mb-8">
+          A simple, repeatable process to identify, design, and deploy your first AI agent in one week — without hiring engineers, buying expensive software, or getting lost in AI hype.
+        </p>
+        <a href="mailto:hello@hummingbirdinc.io?subject=Free%20AI%20Audit%20Request&body=Hi%20Michael%2C%0A%0AI%20downloaded%20the%20AI%20Agent%20Blueprint%20and%20would%20like%20to%20book%20a%20free%20AI%20audit.%0A%0AMy%20business%3A%20%0AMy%20biggest%20repetitive%20task%3A%20%0ABest%20time%20to%20connect%3A%20%0A%0AThank%20you%2C%0A" class="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white gradient-bg rounded-full hover:shadow-xl hover:shadow-teal-500/30 transition-all">Get the blueprint + free AI audit</a>
+      </div>
+    </section>
+
+    <section class="py-16 bg-white">
+      <div class="max-w-3xl mx-auto px-6 prose">
+        <h2>What this blueprint gives you</h2>
+        <p>A simple, repeatable process to identify, design, and deploy your first AI agent in one week — without hiring engineers, buying expensive software, or getting lost in AI hype.</p>
+
+        <h2>Step 1 — Find the bottleneck (2 minutes)</h2>
+        <p>Ask yourself these three questions:</p>
+        <ul>
+          <li>What task do I or my team repeat every day?</li>
+          <li>Where does work get stuck waiting on a human decision?</li>
+          <li>Which 30-minute task, if automated, would free up the most mental energy?</li>
+        </ul>
+        <p><strong>Examples of high-ROI first agents:</strong></p>
+        <ul>
+          <li>Email triage and auto-reply drafting</li>
+          <li>Lead intake and follow-up scheduling</li>
+          <li>Document summarization and extraction</li>
+          <li>Daily/weekly report generation</li>
+          <li>Internal knowledge-base answers</li>
+        </ul>
+
+        <h2>Step 2 — Define success (2 minutes)</h2>
+        <p>Write down:</p>
+        <ul>
+          <li><strong>Trigger:</strong> What starts the agent?</li>
+          <li><strong>Input:</strong> What data does the agent need?</li>
+          <li><strong>Action:</strong> What does the agent do?</li>
+          <li><strong>Output:</strong> Where does the result go?</li>
+          <li><strong>Success metric:</strong> How will you know it works?</li>
+        </ul>
+        <p><strong>Example:</strong></p>
+        <table>
+          <tr><th>Field</th><th>Definition</th></tr>
+          <tr><td>Trigger</td><td>New lead form submitted on website</td></tr>
+          <tr><td>Input</td><td>Name, email, company, request type</td></tr>
+          <tr><td>Action</td><td>Classify request, draft personalized reply, schedule Calendly link</td></tr>
+          <tr><td>Output</td><td>Send email to lead, add to CRM, notify sales Slack channel</td></tr>
+          <tr><td>Success metric</td><td>Response time under 5 minutes; 80% reply relevance</td></tr>
+        </table>
+
+        <h2>Step 3 — Choose your stack (2 minutes)</h2>
+        <p>You do not need custom code. Most first agents can be built with:</p>
+        <ul>
+          <li><strong>AI model:</strong> OpenAI GPT-4o, Anthropic Claude, or local LLM</li>
+          <li><strong>Workflow layer:</strong> n8n, Make.com, or custom code</li>
+          <li><strong>Memory/knowledge:</strong> Notion, Airtable, Google Sheets, or vector database</li>
+          <li><strong>Integrations:</strong> Gmail, Slack, Calendly, HubSpot, Stripe</li>
+        </ul>
+        <p><strong>Rule of thumb:</strong> Start with the tools you already use. Do not add new software unless the agent fails without it.</p>
+
+        <h2>Step 4 — Build the minimum viable agent (3 minutes)</h2>
+        <ol>
+          <li><strong>Connect one trigger.</strong> A new email or form submission is ideal.</li>
+          <li><strong>Write one prompt.</strong> Give the model a clear role, task, input format, and output format.</li>
+          <li><strong>Add one action.</strong> Send an email, create a record, or post to Slack.</li>
+          <li><strong>Run 5 real tests.</strong> Use actual data, not hypotheticals.</li>
+          <li><strong>Fix the failures.</strong> Improve the prompt and logic based on real outputs.</li>
+        </ol>
+        <p><strong>Sample prompt structure:</strong></p>
+        <pre><code>Role: You are a helpful assistant for [company].
+Task: Read the incoming email below and draft a reply.
+Context: We offer [service] to [customer type].
+Input: [email text]
+Output: A short, friendly reply in my voice. If the sender asks about pricing, include a link to [link]. If the request is urgent, flag it.</code></pre>
+
+        <h2>Step 5 — Hand off and measure (1 minute)</h2>
+        <p>Once the agent works on 5 real examples:</p>
+        <ul>
+          <li>Document the trigger, prompt, and action in a runbook.</li>
+          <li>Give one team member ownership of monitoring it.</li>
+          <li>Track the success metric for one week.</li>
+          <li>Decide: expand the agent, build a second one, or retire it.</li>
+        </ul>
+
+        <h2>When to call Hummingbird AI Studio</h2>
+        <p>If you want a working agent in 5 business days without doing the build yourself, book a free 20-minute AI audit at <a href="mailto:hello@hummingbirdinc.io" class="text-hummingbird-teal hover:underline">hello@hummingbirdinc.io</a> or visit <a href="/ai/audit" class="text-hummingbird-teal hover:underline">hummingbirdinc.io/ai/audit</a>.</p>
+        <p>We identify your highest-ROI workflow, build the agent, connect it to your systems, and hand you the runbook. One agent. One week. No surprises.</p>
+      </div>
+    </section>
+
+    <section class="py-16 bg-hummingbird-indigo text-white">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-display font-semibold mb-6">Ready to deploy your first agent?</h2>
+        <p class="text-lg text-slate-300 mb-8">Get the blueprint and a free 20-minute AI audit. We will identify one workflow you can automate immediately.</p>
+        <a href="mailto:hello@hummingbirdinc.io?subject=Free%20AI%20Audit%20Request&body=Hi%20Michael%2C%0A%0AI%20downloaded%20the%20AI%20Agent%20Blueprint%20and%20would%20like%20to%20book%20a%20free%20AI%20audit.%0A%0AMy%20business%3A%20%0AMy%20biggest%20repetitive%20task%3A%20%0ABest%20time%20to%20connect%3A%20%0A%0AThank%20you%2C%0A" class="inline-flex items-center justify-center px-10 py-4 text-lg font-medium text-hummingbird-indigo bg-white rounded-full hover:bg-slate-100 transition-all">Book your free AI audit</a>
+      </div>
+    </section>
+
+    <footer class="py-12 bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        <a href="/" class="text-2xl font-display font-semibold text-hummingbird-indigo">Hummingbird Inc</a>
+        <p class="text-sm text-slate-500">Services billed through American Eagle Ventures LLC.</p>
+      </div>
+    </footer>
+  </body>
+</html>
