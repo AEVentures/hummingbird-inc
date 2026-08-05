@@ -5,17 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Free AI Audit — Hummingbird AI Studio</title>
     <meta name="description" content="Book a free 20-minute AI audit. Hummingbird AI Studio will identify one workflow in your business that an AI agent can handle immediately." />
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hummingbirdinc.io/ai/audit" />
+    <meta property="og:title" content="Free AI Audit — Hummingbird AI Studio" />
+    <meta property="og:description" content="Book a free 20-minute AI audit. Hummingbird AI Studio will identify one workflow in your business that an AI agent can handle immediately." />
+    <meta property="og:image" content="https://hummingbirdinc.io/assets/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Free AI Audit — Hummingbird AI Studio" />
+    <meta name="twitter:description" content="Book a free 20-minute AI audit. Hummingbird AI Studio will identify one workflow in your business that an AI agent can handle immediately." />
+    <meta name="twitter:image" content="https://hummingbirdinc.io/assets/og-image.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
     <script>
       tailwind.config = {
         theme: {
           extend: {
             fontFamily: {
               sans: ['Inter', 'sans-serif'],
-              display: ['Cormorant Garamond', 'serif'],
+              display: ['Poppins', 'sans-serif'],
             },
             colors: {
               hummingbird: {
@@ -44,15 +54,37 @@
   <body class="bg-slate-50 text-hummingbird-slate font-sans antialiased">
     <nav class="fixed w-full bg-white/80 backdrop-blur-md border-b border-slate-200 z-50">
       <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="/" class="text-2xl font-display font-semibold tracking-tight text-hummingbird-indigo">Hummingbird</a>
+        <a href="/" class="flex items-center gap-2">
+          <img src="/assets/logo-icon.png" alt="Hummingbird Inc" class="h-9 w-auto" />
+          <span class="text-2xl font-display font-semibold tracking-tight text-hummingbird-indigo">Hummingbird</span>
+        </a>
         <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
           <a href="/" class="hover:text-hummingbird-teal transition-colors">Home</a>
           <a href="/ai" class="hover:text-hummingbird-teal transition-colors">AI Studio</a>
           <a href="/ai/audit" class="text-hummingbird-teal">Free Audit</a>
           <a href="/ai/blueprint" class="hover:text-hummingbird-teal transition-colors">Blueprint</a>
         </div>
+        <button id="mobile-menu-btn" aria-label="Open menu" class="md:hidden inline-flex items-center justify-center w-10 h-10 text-hummingbird-indigo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-200 px-6 py-4 flex flex-col gap-4 text-sm font-medium text-slate-600">
+        <a href="/" class="hover:text-hummingbird-teal transition-colors">Home</a>
+        <a href="/ai" class="hover:text-hummingbird-teal transition-colors">AI Studio</a>
+        <a href="/ai/audit" class="text-hummingbird-teal">Free Audit</a>
+        <a href="/ai/blueprint" class="hover:text-hummingbird-teal transition-colors">Blueprint</a>
       </div>
     </nav>
+    <script>
+      document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+      });
+      document.querySelectorAll('#mobile-menu a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          document.getElementById('mobile-menu').classList.add('hidden');
+        });
+      });
+    </script>
 
     <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
       <div class="absolute inset-0 -z-10 opacity-30">

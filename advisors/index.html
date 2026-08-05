@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Board of Advisors — Hummingbird Inc</title>
+    <meta name="description" content="Meet the Board of Advisors guiding Hummingbird Inc across finance, branding, ethics, rare earth materials, and natural healing." />
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hummingbirdinc.io/advisors" />
+    <meta property="og:title" content="Board of Advisors — Hummingbird Inc" />
+    <meta property="og:description" content="Meet the Board of Advisors guiding Hummingbird Inc across finance, branding, ethics, rare earth materials, and natural healing." />
+    <meta property="og:image" content="https://hummingbirdinc.io/assets/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Board of Advisors — Hummingbird Inc" />
+    <meta name="twitter:description" content="Meet the Board of Advisors guiding Hummingbird Inc across finance, branding, ethics, rare earth materials, and natural healing." />
+    <meta name="twitter:image" content="https://hummingbirdinc.io/assets/og-image.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Poppins', 'sans-serif'],
+            },
+            colors: {
+              hummingbird: {
+                teal: '#0d9488',
+                emerald: '#10b981',
+                violet: '#8b5cf6',
+                indigo: '#1e1b4b',
+                slate: '#0f172a',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .gradient-text {
+        background: linear-gradient(135deg, #0d9488 0%, #10b981 50%, #8b5cf6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .gradient-bg {
+        background: linear-gradient(135deg, #0d9488 0%, #10b981 50%, #8b5cf6 100%);
+      }
+      .team-card:hover .team-avatar {
+        transform: scale(1.05) rotate(2deg);
+      }
+      .team-avatar {
+        transition: transform 0.3s ease;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-hummingbird-slate font-sans antialiased">
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md border-b border-slate-200 z-50">
+      <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-2">
+          <img src="/assets/logo-icon.png" alt="Hummingbird Inc" class="h-9 w-auto" />
+          <span class="text-2xl font-display font-semibold tracking-tight text-hummingbird-indigo">Hummingbird</span>
+        </a>
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+          <a href="/" class="hover:text-hummingbird-teal transition-colors">Home</a>
+          <a href="/#focus" class="hover:text-hummingbird-teal transition-colors">Focus</a>
+          <a href="/ai" class="hover:text-hummingbird-teal transition-colors">AI Studio</a>
+          <a href="/team" class="hover:text-hummingbird-teal transition-colors">Team</a>
+          <a href="/partners" class="hover:text-hummingbird-teal transition-colors">Partners</a>
+          <a href="/advisors" class="text-hummingbird-teal">Advisors</a>
+          <a href="/#contact" class="hover:text-hummingbird-teal transition-colors">Contact</a>
+        </div>
+        <a href="/#contact" class="hidden md:inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-white gradient-bg rounded-full hover:shadow-lg hover:shadow-teal-500/25 transition-all">Start a conversation</a>
+        <button id="mobile-menu-btn" aria-label="Open menu" class="md:hidden inline-flex items-center justify-center w-10 h-10 text-hummingbird-indigo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-200 px-6 py-4 flex flex-col gap-4 text-sm font-medium text-slate-600">
+        <a href="/" class="hover:text-hummingbird-teal transition-colors">Home</a>
+        <a href="/#focus" class="hover:text-hummingbird-teal transition-colors">Focus</a>
+        <a href="/ai" class="hover:text-hummingbird-teal transition-colors">AI Studio</a>
+        <a href="/team" class="hover:text-hummingbird-teal transition-colors">Team</a>
+        <a href="/partners" class="hover:text-hummingbird-teal transition-colors">Partners</a>
+        <a href="/advisors" class="text-hummingbird-teal">Advisors</a>
+        <a href="/#contact" class="hover:text-hummingbird-teal transition-colors">Contact</a>
+      </div>
+    </nav>
+    <script>
+      document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+      });
+      document.querySelectorAll('#mobile-menu a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          document.getElementById('mobile-menu').classList.add('hidden');
+        });
+      });
+    </script>
+
+    <section class="relative pt-40 pb-20 overflow-hidden">
+      <div class="absolute inset-0 -z-10 opacity-30">
+        <div class="absolute top-10 left-10 w-72 h-72 bg-emerald-300 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-10 right-10 w-96 h-96 bg-violet-300 rounded-full blur-3xl"></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl">
+          <p class="text-sm font-semibold tracking-widest text-hummingbird-teal uppercase mb-4">Guidance and expertise</p>
+          <h1 class="text-4xl md:text-6xl font-display font-semibold leading-tight text-hummingbird-indigo mb-6">Board of Advisors</h1>
+          <p class="text-lg md:text-xl text-slate-600 leading-relaxed">Experienced leaders advising Hummingbird Inc across finance, branding, ethics, materials, and health as we build across our foundations. Full bios coming soon.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article class="team-card p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-hummingbird-teal/30 hover:shadow-xl hover:shadow-teal-500/5 transition-all">
+            <div class="team-avatar w-20 h-20 mb-6 gradient-bg rounded-2xl flex items-center justify-center text-white text-2xl font-display font-semibold">
+              EM
+            </div>
+            <h3 class="text-2xl font-display font-semibold text-hummingbird-indigo mb-1">Ed McGann</h3>
+            <p class="text-sm font-semibold tracking-wide text-hummingbird-teal uppercase mb-4">Advisor, Finance</p>
+            <p class="text-slate-600 leading-relaxed">Bio coming soon.</p>
+          </article>
+
+          <article class="team-card p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-hummingbird-teal/30 hover:shadow-xl hover:shadow-teal-500/5 transition-all">
+            <div class="team-avatar w-20 h-20 mb-6 gradient-bg rounded-2xl flex items-center justify-center text-white text-2xl font-display font-semibold">
+              BF
+            </div>
+            <h3 class="text-2xl font-display font-semibold text-hummingbird-indigo mb-1">Bobby Fried</h3>
+            <p class="text-sm font-semibold tracking-wide text-hummingbird-teal uppercase mb-4">Advisor, Marketing &amp; Branding</p>
+            <p class="text-slate-600 leading-relaxed">Bio coming soon.</p>
+          </article>
+
+          <article class="team-card p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-hummingbird-teal/30 hover:shadow-xl hover:shadow-teal-500/5 transition-all">
+            <div class="team-avatar w-20 h-20 mb-6 gradient-bg rounded-2xl flex items-center justify-center text-white text-2xl font-display font-semibold">
+              MD
+            </div>
+            <h3 class="text-2xl font-display font-semibold text-hummingbird-indigo mb-1">Mike Downey</h3>
+            <p class="text-sm font-semibold tracking-wide text-hummingbird-teal uppercase mb-4">Advisor, Values &amp; Ethics</p>
+            <p class="text-slate-600 leading-relaxed">Bio coming soon.</p>
+          </article>
+
+          <article class="team-card p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-hummingbird-teal/30 hover:shadow-xl hover:shadow-teal-500/5 transition-all">
+            <div class="team-avatar w-20 h-20 mb-6 gradient-bg rounded-2xl flex items-center justify-center text-white text-2xl font-display font-semibold">
+              MS
+            </div>
+            <h3 class="text-2xl font-display font-semibold text-hummingbird-indigo mb-1">Micah Serlin</h3>
+            <p class="text-sm font-semibold tracking-wide text-hummingbird-teal uppercase mb-4">Advisor, Rare Earth Materials</p>
+            <p class="text-slate-600 leading-relaxed">Bio coming soon.</p>
+          </article>
+
+          <article class="team-card p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-hummingbird-teal/30 hover:shadow-xl hover:shadow-teal-500/5 transition-all">
+            <div class="team-avatar w-20 h-20 mb-6 gradient-bg rounded-2xl flex items-center justify-center text-white text-2xl font-display font-semibold">
+              MC
+            </div>
+            <h3 class="text-2xl font-display font-semibold text-hummingbird-indigo mb-1">Marissa Castellano</h3>
+            <p class="text-sm font-semibold tracking-wide text-hummingbird-teal uppercase mb-4">Advisor, Natural Healing &amp; Health</p>
+            <p class="text-slate-600 leading-relaxed">Bio coming soon.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-hummingbird-indigo text-white">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <p class="text-sm font-semibold tracking-widest text-hummingbird-teal uppercase mb-4">Meet the team</p>
+        <h2 class="text-4xl md:text-5xl font-display font-semibold mb-6">See who's building Hummingbird day to day.</h2>
+        <a href="/team" class="inline-flex items-center justify-center px-10 py-4 text-lg font-medium text-hummingbird-indigo bg-white rounded-full hover:bg-slate-100 transition-all">View the Team</a>
+      </div>
+    </section>
+
+    <footer class="py-12 bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        <a href="/" class="text-2xl font-display font-semibold text-hummingbird-indigo">Hummingbird Inc</a>
+        <p class="text-sm text-slate-500">&copy; 2026 Hummingbird Inc. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
