@@ -1,0 +1,61 @@
+{
+  "lastUpdated": "2026-08-24",
+  "reportingPeriod": "Pre-revenue / formation stage",
+  "disclaimer": "This dashboard contains private operating data. Financial figures are preliminary and unaudited. Hummingbird Inc is not currently offering securities to the public.",
+  "status": "Building first revenue vertical (Hummingbird AI Studio) and documenting strategic partnerships.",
+  "revenue": {
+    "mrr": null,
+    "totalRevenueYtd": null,
+    "buildWeeksSold": 0,
+    "buildWeekPipeline": 0,
+    "avgBuildWeekPrice": 4500,
+    "auditCallsBooked": 0
+  },
+  "customers": {
+    "paying": 0,
+    "pilot": 0,
+    "testimonials": 0
+  },
+  "audience": {
+    "newsletterSubscribers": 0,
+    "xFollowers": 0,
+    "linkedinFollowers": 0,
+    "websiteVisitors30d": 0
+  },
+  "operations": {
+    "teamMembers": 5,
+    "advisors": null,
+    "allies": 7,
+    "partners": 4,
+    "partnerEquityStakes": 0,
+    "partnerMous": 0,
+    "patentsPending": 0,
+    "trademarks": 0
+  },
+  "milestones": [
+    {
+      "date": "2026-08-24",
+      "title": "Hummingbird Inc website and operating narrative published"
+    },
+    {
+      "date": "2026-08-24",
+      "title": "Allies page expanded to include national political leaders and Florida candidates"
+    },
+    {
+      "date": "2026-08-24",
+      "title": "Investor / operating dashboard page launched"
+    },
+    {
+      "date": "TBD",
+      "title": "First paid Hummingbird AI Studio Build Week closed"
+    },
+    {
+      "date": "TBD",
+      "title": "First signed partner economic agreement executed"
+    },
+    {
+      "date": "TBD",
+      "title": "First outside capital close"
+    }
+  ]
+}

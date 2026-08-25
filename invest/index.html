@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invest — Hummingbird Inc</title>
+    <meta name="description" content="Hummingbird Inc is a private venture group building AI, solar, robotics, natural healing, CRISPR, and rare earth mineral ventures. Operating data and investment thesis." />
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hummingbirdinc.io/invest" />
+    <meta property="og:title" content="Invest — Hummingbird Inc" />
+    <meta property="og:description" content="Hummingbird Inc is a private venture group building AI, solar, robotics, natural healing, CRISPR, and rare earth mineral ventures. Operating data and investment thesis." />
+    <meta property="og:image" content="https://hummingbirdinc.io/assets/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Invest — Hummingbird Inc" />
+    <meta name="twitter:description" content="Hummingbird Inc is a private venture group building AI, solar, robotics, natural healing, CRISPR, and rare earth mineral ventures. Operating data and investment thesis." />
+    <meta name="twitter:image" content="https://hummingbirdinc.io/assets/og-image.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Poppins', 'sans-serif'],
+            },
+            colors: {
+              hummingbird: {
+                teal: '#0d9488',
+                emerald: '#10b981',
+                violet: '#8b5cf6',
+                indigo: '#1e1b4b',
+                slate: '#0f172a',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .gradient-text {
+        background: linear-gradient(135deg, #0d9488 0%, #10b981 50%, #8b5cf6 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .gradient-bg {
+        background: linear-gradient(135deg, #0d9488 0%, #10b981 50%, #8b5cf6 100%);
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-hummingbird-slate font-sans antialiased">
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md border-b border-slate-200 z-50">
+      <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-2">
+          <img src="/assets/logo-icon.png" alt="Hummingbird Inc" class="h-9 w-auto" />
+          <span class="text-2xl font-display font-semibold tracking-tight text-hummingbird-indigo">Hummingbird</span>
+        </a>
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+          <a href="/" class="hover:text-hummingbird-teal transition-colors">Home</a>
+          <a href="/invest" class="text-hummingbird-teal">Invest</a>
+          <a href="/ai" class="hover:text-hummingbird-teal transition-colors">AI Studio</a>
+          <a href="/partners" class="hover:text-hummingbird-teal transition-colors">Partners</a>
+          <a href="/team" class="hover:text-hummingbird-teal transition-colors">Team</a>
+          <a href="/advisors" class="hover:text-hummingbird-teal transition-colors">Advisors</a>
+          <a href="/allies" class="hover:text-hummingbird-teal transition-colors">Allies</a>
+          <a href="/#about" class="hover:text-hummingbird-teal transition-colors">About</a>
+          <a href="/#contact" class="hover:text-hummingbird-teal transition-colors">Contact</a>
+        </div>
+        <a href="mailto:hello@hummingbirdinc.io?subject=Investor%20Inquiry" class="hidden md:inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-white gradient-bg rounded-full hover:shadow-lg hover:shadow-teal-500/25 transition-all">Investor inquiry</a>
+        <button id="mobile-menu-btn" aria-label="Open menu" class="md:hidden inline-flex items-center justify-center w-10 h-10 text-hummingbird-indigo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-200 px-6 py-4 flex flex-col gap-4 text-sm font-medium text-slate-600">
+        <a href="/" class="hover:text-hummingbird-teal transition-colors">Home</a>
+        <a href="/invest" class="text-hummingbird-teal">Invest</a>
+        <a href="/ai" class="hover:text-hummingbird-teal transition-colors">AI Studio</a>
+        <a href="/partners" class="hover:text-hummingbird-teal transition-colors">Partners</a>
+        <a href="/team" class="hover:text-hummingbird-teal transition-colors">Team</a>
+        <a href="/advisors" class="hover:text-hummingbird-teal transition-colors">Advisors</a>
+        <a href="/allies" class="hover:text-hummingbird-teal transition-colors">Allies</a>
+        <a href="/#about" class="hover:text-hummingbird-teal transition-colors">About</a>
+        <a href="/#contact" class="hover:text-hummingbird-teal transition-colors">Contact</a>
+      </div>
+    </nav>
+    <script>
+      document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+      });
+      document.querySelectorAll('#mobile-menu a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          document.getElementById('mobile-menu').classList.add('hidden');
+        });
+      });
+    </script>
+
+    <section class="relative pt-40 pb-20 overflow-hidden">
+      <div class="absolute inset-0 -z-10 opacity-30">
+        <div class="absolute top-10 left-10 w-72 h-72 bg-emerald-300 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-10 right-10 w-96 h-96 bg-violet-300 rounded-full blur-3xl"></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl">
+          <p class="text-sm font-semibold tracking-widest text-hummingbird-teal uppercase mb-4">Private venture group</p>
+          <h1 class="text-4xl md:text-6xl font-display font-semibold leading-tight text-hummingbird-indigo mb-6">Invest in the infrastructure of the next century</h1>
+          <p class="text-lg md:text-xl text-slate-600 leading-relaxed mb-8">Hummingbird Inc is building and backing the hard technologies that will define the future: artificial intelligence, solar, robotics, natural healing, CRISPR, and rare earth minerals. We are starting with a revenue-generating AI Studio, documented partner relationships, and a public commitment to transparency.</p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="mailto:hello@hummingbirdinc.io?subject=Investor%20Inquiry" class="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white gradient-bg rounded-full hover:shadow-xl hover:shadow-teal-500/30 transition-all">Request investor information</a>
+            <a href="#dashboard" class="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-hummingbird-indigo bg-white border border-slate-200 rounded-full hover:border-hummingbird-teal hover:text-hummingbird-teal transition-all">View live operating data</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-12 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="rounded-2xl bg-amber-50 border border-amber-200 p-6 md:p-8">
+          <div class="flex items-start gap-4">
+            <div class="shrink-0 w-10 h-10 rounded-full bg-amber-200 flex items-center justify-center text-amber-700 font-bold">!</div>
+            <div>
+              <h3 class="text-lg font-display font-semibold text-amber-900 mb-2">Important disclosure</h3>
+              <p class="text-amber-800 leading-relaxed">Hummingbird Inc is a private venture group and is not currently offering securities to the public. The information on this page is provided for informational and relationship-building purposes only. It is not an offer to sell, a solicitation of an offer to buy, or investment advice. Any future securities offering will be made only to qualified investors under applicable securities laws and with appropriate legal documentation. Always consult qualified legal, tax, and financial advisors before making any investment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl mb-16">
+          <p class="text-sm font-semibold tracking-widest text-hummingbird-teal uppercase mb-4">Investment thesis</p>
+          <h2 class="text-4xl md:text-5xl font-display font-semibold text-hummingbird-indigo mb-6">Why Hummingbird, why now</h2>
+          <p class="text-lg text-slate-600">The next trillion-dollar companies will own the layers of technology that everything else runs on: intelligence, energy, matter, biology, and the minerals that make them possible. Hummingbird is designed to capture value across all of them.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article class="p-8 rounded-3xl bg-slate-50 border border-slate-100">
+            <div class="w-12 h-12 mb-6 gradient-bg rounded-2xl flex items-center justify-center text-white font-display font-semibold text-xl">1</div>
+            <h3 class="text-2xl font-display font-semibold text-hummingbird-indigo mb-3">AI as the operating system</h3>
+            <p class="text-slate-600 leading-relaxed">Artificial intelligence is not one vertical for us. It is the layer that runs every other foundation. Hummingbird AI Studio is the first revenue engine, and every agent we build makes the holding company smarter.</p>
+          </article>
+
+          <article class="p-8 rounded-3xl bg-slate-50 border border-slate-100">
+            <div class="w-12 h-12 mb-6 gradient-bg rounded-2xl flex items-center justify-center text-white font-display font-semibold text-xl">2</div>
+            <h3 class="text-2xl font-display font-semibold text-hummingbird-indigo mb-3">Hard-tech convergence</h3>
+            <p class="text-slate-600 leading-relaxed">Solar, robotics, CRISPR, natural healing, and rare earth minerals are deeply interconnected. Energy powers AI and robotics. Gene editing requires rare materials and advanced automation. A single brand can own the overlaps.</p>
+          </article>
+
+          <article class="p-8 rounded-3xl bg-slate-50 border border-slate-100">
+            <div class="w-12 h-12 mb-6 gradient-bg rounded-2xl flex items-center justify-center text-white font-display font-semibold text-xl">3</div>
+            <h3 class="text-2xl font-display font-semibold text-hummingbird-indigo mb-3">Strategic leverage</h3>
+            <p class="text-slate-600 leading-relaxed">Our network of political allies, entrepreneurs, advisors, and operators gives Hummingbird access to deal flow, policy visibility, and large-scale partnerships that pure financial investors cannot easily replicate.</p>
+          </article>
+
+          <article class="p-8 rounded-3xl bg-slate-50 border border-slate-100">
+            <div class="w-12 h-12 mb-6 gradient-bg rounded-2xl flex items-center justify-center text-white font-display font-semibold text-xl">4</div>
+            <h3 class="text-2xl font-display font-semibold text-hummingbird-indigo mb-3">Capital efficiency</h3>
+            <p class="text-slate-600 leading-relaxed">We do not need to build every foundation from scratch. Hummingbird identifies exceptional companies already doing the work, then supports them with capital, customers, and brand leverage in exchange for real economic participation.</p>
+          </article>
+
+          <article class="p-8 rounded-3xl bg-slate-50 border border-slate-100">
+            <div class="w-12 h-12 mb-6 gradient-bg rounded-2xl flex items-center justify-center text-white font-display font-semibold text-xl">5</div>
+            <h3 class="text-2xl font-display font-semibold text-hummingbird-indigo mb-3">IP and data moats</h3>
+            <p class="text-slate-600 leading-relaxed">Every AI engagement, every partnership, and every piece of content generates proprietary know-how, datasets, and workflows. We protect those assets as the company scales.</p>
+          </article>
+
+          <article class="p-8 rounded-3xl bg-slate-50 border border-slate-100">
+            <div class="w-12 h-12 mb-6 gradient-bg rounded-2xl flex items-center justify-center text-white font-display font-semibold text-xl">6</div>
+            <h3 class="text-2xl font-display font-semibold text-hummingbird-indigo mb-3">Built in public</h3>
+            <p class="text-slate-600 leading-relaxed">We report our operating data openly. This creates accountability, attracts partners, and lets investors track progress before they ever write a check. Trust is built by showing the work.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="dashboard" class="py-24 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl mb-12">
+          <p class="text-sm font-semibold tracking-widest text-hummingbird-teal uppercase mb-4">Live operating data</p>
+          <h2 class="text-4xl md:text-5xl font-display font-semibold text-hummingbird-indigo mb-6">What we are building, measured weekly</h2>
+          <p class="text-lg text-slate-600 mb-4">This dashboard is updated weekly from the same data file that powers our internal reporting. No prototypes. No projections. Just the real numbers as they stand.</p>
+          <p id="dashboard-last-updated" class="text-sm font-medium text-slate-500">Loading dashboard...</p>
+          <p id="dashboard-status" class="text-sm text-slate-500 mt-1"></p>
+          <p id="dashboard-error" class="text-sm text-red-600 mt-2"></p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+            <p class="text-sm font-medium text-slate-500 mb-1">Monthly recurring revenue</p>
+            <p id="metric-mrr" class="text-3xl font-display font-semibold text-hummingbird-indigo">—</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+            <p class="text-sm font-medium text-slate-500 mb-1">Revenue year to date</p>
+            <p id="metric-revenue-ytd" class="text-3xl font-display font-semibold text-hummingbird-indigo">—</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+            <p class="text-sm font-medium text-slate-500 mb-1">Build Weeks sold</p>
+            <p id="metric-build-weeks" class="text-3xl font-display font-semibold text-hummingbird-indigo">—</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+            <p class="text-sm font-medium text-slate-500 mb-1">Build Week pipeline</p>
+            <p id="metric-build-week-pipeline" class="text-3xl font-display font-semibold text-hummingbird-indigo">—</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+            <p class="text-sm font-medium text-slate-500 mb-1">Audit calls booked</p>
+            <p id="metric-audit-calls" class="text-3xl font-display font-semibold text-hummingbird-indigo">—</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+            <p class="text-sm font-medium text-slate-500 mb-1">Paying customers</p>
+            <p id="metric-paying-customers" class="text-3xl font-display font-semibold text-hummingbird-indigo">—</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+            <p class="text-sm font-medium text-slate-500 mb-1">Pilot customers</p>
+            <p id="metric-pilot-customers" class="text-3xl font-display font-semibold text-hummingbird-indigo">—</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+            <p class="text-sm font-medium text-slate-500 mb-1">Customer testimonials</p>
+            <p id="metric-testimonials" class="text-3xl font-display font-semibold text-hummingbird-indigo">—</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+            <p class="text-sm font-medium text-slate-500 mb-1">Newsletter subscribers</p>
+            <p id="metric-newsletter" class="text-3xl font-display font-semibold text-hummingbird-indigo">—</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+            <p class="text-sm font-medium text-slate-500 mb-1">X followers</p>
+            <p id="metric-x-followers" class="text-3xl font-display font-semibold text-hummingbird-indigo">—</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+            <p class="text-sm font-medium text-slate-500 mb-1">LinkedIn followers</p>
+            <p id="metric-linkedin-followers" class="text-3xl font-display font-semibold text-hummingbird-indigo">—</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+            <p class="text-sm font-medium text-slate-500 mb-1">Website visitors (30d)</p>
+            <p id="metric-website-visitors" class="text-3xl font-display font-semibold text-hummingbird-indigo">—</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+            <p class="text-sm font-medium text-slate-500 mb-1">Team members</p>
+            <p id="metric-team" class="text-3xl font-display font-semibold text-hummingbird-indigo">—</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+            <p class="text-sm font-medium text-slate-500 mb-1">Advisors</p>
+            <p id="metric-advisors" class="text-3xl font-display font-semibold text-hummingbird-indigo">—</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+            <p class="text-sm font-medium text-slate-500 mb-1">Political allies</p>
+            <p id="metric-allies" class="text-3xl font-display font-semibold text-hummingbird-indigo">—</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+            <p class="text-sm font-medium text-slate-500 mb-1">Strategic partners</p>
+            <p id="metric-partners" class="text-3xl font-display font-semibold text-hummingbird-indigo">—</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+            <p class="text-sm font-medium text-slate-500 mb-1">Partner equity stakes</p>
+            <p id="metric-equity-stakes" class="text-3xl font-display font-semibold text-hummingbird-indigo">—</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+            <p class="text-sm font-medium text-slate-500 mb-1">Partner MOUs / LOIs</p>
+            <p id="metric-mous" class="text-3xl font-display font-semibold text-hummingbird-indigo">—</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+            <p class="text-sm font-medium text-slate-500 mb-1">Patents pending</p>
+            <p id="metric-patents" class="text-3xl font-display font-semibold text-hummingbird-indigo">—</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+            <p class="text-sm font-medium text-slate-500 mb-1">Trademarks</p>
+            <p id="metric-trademarks" class="text-3xl font-display font-semibold text-hummingbird-indigo">—</p>
+          </div>
+        </div>
+
+        <div class="p-8 md:p-10 rounded-3xl bg-white border border-slate-200">
+          <h3 class="text-2xl md:text-3xl font-display font-semibold text-hummingbird-indigo mb-6">Milestones</h3>
+          <ul id="milestones-list" class="space-y-4">
+            <li class="text-slate-500">Loading milestones...</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+          <div>
+            <p class="text-sm font-semibold tracking-widest text-hummingbird-teal uppercase mb-4">Use of funds</p>
+            <h2 class="text-4xl md:text-5xl font-display font-semibold text-hummingbird-indigo mb-6">How we would deploy capital</h2>
+            <p class="text-lg text-slate-600 leading-relaxed mb-6">Any capital raised will be used to turn the Hummingbird brand into a real operating company with revenue, assets, and governance.</p>
+            <div class="space-y-6">
+              <div class="flex items-start gap-4">
+                <div class="w-2 h-2 mt-2 rounded-full gradient-bg shrink-0"></div>
+                <div>
+                  <h4 class="font-display font-semibold text-hummingbird-indigo">Sales and customer acquisition</h4>
+                  <p class="text-slate-600">Paid outreach, content, and partnerships to close the first AI Studio Build Weeks and build a repeatable sales motion.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-2 h-2 mt-2 rounded-full gradient-bg shrink-0"></div>
+                <div>
+                  <h4 class="font-display font-semibold text-hummingbird-indigo">AI Studio productization</h4>
+                  <p class="text-slate-600">Turn one-off Build Weeks into repeatable productized agents with templates, documentation, and support infrastructure.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-2 h-2 mt-2 rounded-full gradient-bg shrink-0"></div>
+                <div>
+                  <h4 class="font-display font-semibold text-hummingbird-indigo">Partner stakes</h4>
+                  <p class="text-slate-600">Equity, warrants, and revenue-share agreements with our solar, robotics, CRISPR, and rare earth partners.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-2 h-2 mt-2 rounded-full gradient-bg shrink-0"></div>
+                <div>
+                  <h4 class="font-display font-semibold text-hummingbird-indigo">Legal and governance</h4>
+                  <p class="text-slate-600">Entity formation, cap table clean-up, trademarks, patents, and investor-grade financial reporting.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-2 h-2 mt-2 rounded-full gradient-bg shrink-0"></div>
+                <div>
+                  <h4 class="font-display font-semibold text-hummingbird-indigo">Team and operations</h4>
+                  <p class="text-slate-600">Bring on full-time operators, sales, and technical delivery capacity to support growth.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-8 md:p-10 rounded-3xl bg-slate-50 border border-slate-100">
+            <h3 class="text-2xl md:text-3xl font-display font-semibold text-hummingbird-indigo mb-4">Current stage</h3>
+            <p class="text-slate-600 leading-relaxed mb-6">Hummingbird Inc is in the formation and first-revenue stage. The website, AI Studio offer, partner narrative, and political network are live. The next objective is to convert that narrative into signed customers and signed partner agreements.</p>
+            <p class="text-slate-600 leading-relaxed mb-6">We are not actively raising a priced round today. We are building the evidence that would justify one.</p>
+            <a href="mailto:hello@hummingbirdinc.io?subject=Investor%20Inquiry" class="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white gradient-bg rounded-full hover:shadow-xl hover:shadow-teal-500/30 transition-all">Request investor information</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-hummingbird-indigo text-white">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <p class="text-sm font-semibold tracking-widest text-hummingbird-teal uppercase mb-4">Join the build</p>
+        <h2 class="text-3xl md:text-4xl font-display font-semibold mb-6">Want to be part of the next chapter?</h2>
+        <p class="text-lg text-slate-300 mb-8">If you are an accredited investor, operator, or strategic partner aligned with our mission, we would like to hear from you.</p>
+        <a href="mailto:hello@hummingbirdinc.io?subject=Investor%20Inquiry" class="inline-flex items-center justify-center px-10 py-4 text-lg font-medium text-hummingbird-indigo bg-white rounded-full hover:bg-slate-100 transition-all">Contact investor relations</a>
+        <p class="mt-6 text-sm text-slate-400">hello@hummingbirdinc.io</p>
+      </div>
+    </section>
+
+    <footer class="py-12 bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        <a href="/" class="text-2xl font-display font-semibold text-hummingbird-indigo">Hummingbird Inc</a>
+        <p class="text-sm text-slate-500">&copy; 2026 Hummingbird Inc. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', async function () {
+        try {
+          const res = await fetch('/data/metrics.json?t=' + Date.now());
+          if (!res.ok) throw new Error('Failed to load metrics');
+          const data = await res.json();
+          renderDashboard(data);
+        } catch (err) {
+          document.getElementById('dashboard-error').textContent = 'Unable to load live dashboard data. Please check back later.';
+          document.getElementById('dashboard-last-updated').textContent = '';
+        }
+      });
+
+      function fmtMoney(val) {
+        if (val === null || val === undefined || val === '') return '—';
+        return '$' + Number(val).toLocaleString();
+      }
+      function fmtNumber(val) {
+        if (val === null || val === undefined || val === '') return '—';
+        return Number(val).toLocaleString();
+      }
+
+      function renderDashboard(data) {
+        document.getElementById('dashboard-last-updated').textContent = 'Last updated: ' + (data.lastUpdated || 'Unknown');
+        document.getElementById('dashboard-status').textContent = data.status || '';
+
+        const r = data.revenue || {};
+        const c = data.customers || {};
+        const a = data.audience || {};
+        const o = data.operations || {};
+
+        document.getElementById('metric-mrr').textContent = fmtMoney(r.mrr);
+        document.getElementById('metric-revenue-ytd').textContent = fmtMoney(r.totalRevenueYtd);
+        document.getElementById('metric-build-weeks').textContent = fmtNumber(r.buildWeeksSold);
+        document.getElementById('metric-build-week-pipeline').textContent = fmtNumber(r.buildWeekPipeline);
+        document.getElementById('metric-audit-calls').textContent = fmtNumber(r.auditCallsBooked);
+        document.getElementById('metric-paying-customers').textContent = fmtNumber(c.paying);
+        document.getElementById('metric-pilot-customers').textContent = fmtNumber(c.pilot);
+        document.getElementById('metric-testimonials').textContent = fmtNumber(c.testimonials);
+        document.getElementById('metric-newsletter').textContent = fmtNumber(a.newsletterSubscribers);
+        document.getElementById('metric-x-followers').textContent = fmtNumber(a.xFollowers);
+        document.getElementById('metric-linkedin-followers').textContent = fmtNumber(a.linkedinFollowers);
+        document.getElementById('metric-website-visitors').textContent = fmtNumber(a.websiteVisitors30d);
+        document.getElementById('metric-team').textContent = fmtNumber(o.teamMembers);
+        document.getElementById('metric-advisors').textContent = fmtNumber(o.advisors);
+        document.getElementById('metric-allies').textContent = fmtNumber(o.allies);
+        document.getElementById('metric-partners').textContent = fmtNumber(o.partners);
+        document.getElementById('metric-equity-stakes').textContent = fmtNumber(o.partnerEquityStakes);
+        document.getElementById('metric-mous').textContent = fmtNumber(o.partnerMous);
+        document.getElementById('metric-patents').textContent = fmtNumber(o.patentsPending);
+        document.getElementById('metric-trademarks').textContent = fmtNumber(o.trademarks);
+
+        const list = document.getElementById('milestones-list');
+        list.innerHTML = '';
+        if (Array.isArray(data.milestones)) {
+          data.milestones.forEach(function (m) {
+            const li = document.createElement('li');
+            li.className = 'flex gap-4';
+            li.innerHTML = '<span class="text-sm font-semibold text-hummingbird-teal w-28 shrink-0">' + (m.date || 'TBD') + '</span><span class="text-slate-600">' + (m.title || '') + '</span>';
+            list.appendChild(li);
+          });
+        }
+      }
+    </script>
+  </body>
+</html>
