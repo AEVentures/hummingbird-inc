@@ -1,0 +1,63 @@
+{
+  "lastUpdated": "2026-08-25",
+  "reportingPeriod": "Week of August 25, 2026",
+  "disclaimer": "Weekly growth data. All numbers are tracked manually and updated every Tuesday. Targets reflect the 30-day sprint goal divided into weekly milestones.",
+  "northStar": {
+    "label": "Weekly revenue",
+    "value": 0,
+    "target": 13500,
+    "unit": "USD"
+  },
+  "funnel": {
+    "stages": [
+      { "id": "visitors", "label": "Website visitors", "current": 0, "prior": 0, "target": 1000, "isMoney": false },
+      { "id": "leads", "label": "AI audit requests", "current": 0, "prior": 0, "target": 25, "isMoney": false },
+      { "id": "calls", "label": "Audit calls booked", "current": 0, "prior": 0, "target": 10, "isMoney": false },
+      { "id": "proposals", "label": "Build Week proposals", "current": 0, "prior": 0, "target": 5, "isMoney": false },
+      { "id": "customers", "label": "Build Weeks sold", "current": 0, "prior": 0, "target": 3, "isMoney": false },
+      { "id": "revenue", "label": "Revenue collected", "current": 0, "prior": 0, "target": 13500, "isMoney": true }
+    ]
+  },
+  "channels": [
+    { "name": "Organic social (X / LinkedIn)", "leads": 0 },
+    { "name": "Direct outreach", "leads": 0 },
+    { "name": "Referrals", "leads": 0 },
+    { "name": "Paid ads", "leads": 0 },
+    { "name": "Newsletter", "leads": 0 }
+  ],
+  "experiments": [
+    {
+      "name": "Add free AI audit form to /ai",
+      "hypothesis": "Lowering friction from mailto to a form will increase audit request volume.",
+      "metric": "Audit requests per week",
+      "result": null,
+      "status": "In progress",
+      "decision": "TBD"
+    },
+    {
+      "name": "Founder-led daily content for 30 days",
+      "hypothesis": "Consistent founder posting on X and LinkedIn will drive qualified visitors and lower customer acquisition cost.",
+      "metric": "Visitors and leads from organic social",
+      "result": null,
+      "status": "In progress",
+      "decision": "TBD"
+    },
+    {
+      "name": "20 personalized outreach messages per day",
+      "hypothesis": "Daily direct outreach to a single target persona will produce the first paid Build Weeks faster than inbound alone.",
+      "metric": "Replies and calls booked",
+      "result": null,
+      "status": "In progress",
+      "decision": "TBD"
+    }
+  ],
+  "actions": [
+    { "task": "Post 1x per day on X", "owner": "Michael", "status": "pending" },
+    { "task": "Comment and engage on 10 relevant posts per day", "owner": "Michael", "status": "pending" },
+    { "task": "Send 20 personalized outreach messages per day", "owner": "Michael", "status": "pending" },
+    { "task": "Publish 1 weekly newsletter issue", "owner": "Michael", "status": "pending" },
+    { "task": "Record and post 1 demo or case study per week", "owner": "Michael", "status": "pending" },
+    { "task": "Close the first paid Build Week", "owner": "Michael", "status": "pending" }
+  ],
+  "notes": "This is the first growth tracking week. The baseline is zero across all channels. The immediate objective is to establish a repeatable weekly rhythm: post, outreach, measure, iterate."
+}

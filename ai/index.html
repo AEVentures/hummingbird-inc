@@ -67,6 +67,7 @@
         <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
           <a href="/" class="hover:text-hummingbird-teal transition-colors">Home</a>
           <a href="/invest" class="hover:text-hummingbird-teal transition-colors">Invest</a>
+          <a href="/growth" class="hover:text-hummingbird-teal transition-colors">Growth</a>
           <a href="/ai" class="text-hummingbird-teal">AI Studio</a>
           <a href="/ai/audit" class="hover:text-hummingbird-teal transition-colors">Free Audit</a>
           <a href="/ai/blueprint" class="hover:text-hummingbird-teal transition-colors">Blueprint</a>
@@ -87,6 +88,7 @@
       <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-200 px-6 py-4 flex flex-col gap-4 text-sm font-medium text-slate-600">
         <a href="/" class="hover:text-hummingbird-teal transition-colors">Home</a>
           <a href="/invest" class="hover:text-hummingbird-teal transition-colors">Invest</a>
+          <a href="/growth" class="hover:text-hummingbird-teal transition-colors">Growth</a>
         <a href="/ai" class="text-hummingbird-teal">AI Studio</a>
         <a href="/ai/audit" class="hover:text-hummingbird-teal transition-colors">Free Audit</a>
         <a href="/ai/blueprint" class="hover:text-hummingbird-teal transition-colors">Blueprint</a>
@@ -252,7 +254,96 @@
       </div>
     </section>
 
+    <section id="audit" class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+          <div>
+            <p class="text-sm font-semibold tracking-widest text-hummingbird-teal uppercase mb-4">Free AI audit</p>
+            <h2 class="text-4xl md:text-5xl font-display font-semibold text-hummingbird-indigo mb-6">Find your first AI win in 20 minutes</h2>
+            <p class="text-lg text-slate-600 leading-relaxed mb-6">Tell us about the work that eats your time. We will identify one workflow you can hand off to an AI agent immediately — no commitment, no sales pressure.</p>
+            <ul class="space-y-3 text-slate-600">
+              <li class="flex items-start gap-3">
+                <span class="inline-flex w-5 h-5 flex-shrink-0 gradient-bg rounded-full items-center justify-center text-white text-xs">1</span>
+                <span>Fill out the form.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="inline-flex w-5 h-5 flex-shrink-0 gradient-bg rounded-full items-center justify-center text-white text-xs">2</span>
+                <span>We reply within one business day.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="inline-flex w-5 h-5 flex-shrink-0 gradient-bg rounded-full items-center justify-center text-white text-xs">3</span>
+                <span>Get a 20-minute audit and a clear automation plan.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100">
+            <form id="audit-form" class="space-y-5">
+              <div>
+                <label for="name" class="block text-sm font-medium text-slate-700 mb-1">Name</label>
+                <input type="text" id="name" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-hummingbird-teal focus:outline-none focus:ring-2 focus:ring-hummingbird-teal/20" placeholder="Your name" />
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-slate-700 mb-1">Email</label>
+                <input type="email" id="email" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-hummingbird-teal focus:outline-none focus:ring-2 focus:ring-hummingbird-teal/20" placeholder="you@company.com" />
+              </div>
+              <div>
+                <label for="company" class="block text-sm font-medium text-slate-700 mb-1">Company / role</label>
+                <input type="text" id="company" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-hummingbird-teal focus:outline-none focus:ring-2 focus:ring-hummingbird-teal/20" placeholder="Founder at..." />
+              </div>
+              <div>
+                <label for="task" class="block text-sm font-medium text-slate-700 mb-1">Repetitive task you want to automate</label>
+                <textarea id="task" rows="3" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-hummingbird-teal focus:outline-none focus:ring-2 focus:ring-hummingbird-teal/20" placeholder="e.g., following up with inbound leads, summarizing documents, scheduling calls..."></textarea>
+              </div>
+              <button type="submit" class="w-full inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white gradient-bg rounded-full hover:shadow-xl hover:shadow-teal-500/30 transition-all">Request free AI audit</button>
+              <p class="text-xs text-slate-500 text-center">We will never share your information. Replies within one business day.</p>
+            </form>
+            <script>
+              document.getElementById('audit-form').addEventListener('submit', function (e) {
+                e.preventDefault();
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const company = document.getElementById('company').value;
+                const task = document.getElementById('task').value;
+                const subject = 'Free AI Audit Request';
+                const body = 'Name: ' + name + '\nEmail: ' + email + '\nCompany/Role: ' + company + '\n\nRepetitive task to automate:\n' + task;
+                window.location.href = 'mailto:hello@hummingbirdinc.io?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="py-24 bg-slate-50">
+      <div class="max-w-4xl mx-auto px-6">
+        <p class="text-sm font-semibold tracking-widest text-hummingbird-teal uppercase mb-4 text-center">FAQ</p>
+        <h2 class="text-4xl md:text-5xl font-display font-semibold text-hummingbird-indigo mb-10 text-center">Common questions</h2>
+        <div class="space-y-6">
+          <div class="p-6 rounded-2xl bg-white border border-slate-100">
+            <h3 class="text-lg font-display font-semibold text-hummingbird-indigo mb-2">Do I need to know how to code?</h3>
+            <p class="text-slate-600">No. We design, build, and hand off the agent. You use it through the tools you already know.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-slate-100">
+            <h3 class="text-lg font-display font-semibold text-hummingbird-indigo mb-2">What can an AI agent actually do?</h3>
+            <p class="text-slate-600">Anything with a clear trigger, data source, and set of actions: triage email, follow up with leads, summarize documents, update your CRM, schedule calls, and more.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-slate-100">
+            <h3 class="text-lg font-display font-semibold text-hummingbird-indigo mb-2">How long until it is running?</h3>
+            <p class="text-slate-600">Build Week is five business days. The agent is working by Friday, not in three months.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-slate-100">
+            <h3 class="text-lg font-display font-semibold text-hummingbird-indigo mb-2">What if the agent does not work as expected?</h3>
+            <p class="text-slate-600">Build Week includes 30 days of support and tweaks. If we cannot deliver a working agent, we keep working until it runs.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-slate-100">
+            <h3 class="text-lg font-display font-semibold text-hummingbird-indigo mb-2">Can I start with just an audit?</h3>
+            <p class="text-slate-600">Yes. The 20-minute AI audit is free and comes with a written automation plan. Book only when you are ready.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-white">
       <div class="max-w-7xl mx-auto px-6">
         <div class="max-w-3xl mx-auto text-center mb-16">
           <p class="text-sm font-semibold tracking-widest text-hummingbird-teal uppercase mb-4">Owned &amp; operated by Hummingbird</p>

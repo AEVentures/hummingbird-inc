@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Growth — Hummingbird Inc</title>
+    <meta name="description" content="Hummingbird Inc growth command center. Track the funnel, experiments, and weekly action cadence that drives revenue." />
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hummingbirdinc.io/growth" />
+    <meta property="og:title" content="Growth — Hummingbird Inc" />
+    <meta property="og:description" content="Hummingbird Inc growth command center. Track the funnel, experiments, and weekly action cadence that drives revenue." />
+    <meta property="og:image" content="https://hummingbirdinc.io/assets/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Growth — Hummingbird Inc" />
+    <meta name="twitter:description" content="Hummingbird Inc growth command center. Track the funnel, experiments, and weekly action cadence that drives revenue." />
+    <meta name="twitter:image" content="https://hummingbirdinc.io/assets/og-image.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Poppins', 'sans-serif'],
+            },
+            colors: {
+              hummingbird: {
+                teal: '#0d9488',
+                emerald: '#10b981',
+                violet: '#8b5cf6',
+                indigo: '#1e1b4b',
+                slate: '#0f172a',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .gradient-text {
+        background: linear-gradient(135deg, #0d9488 0%, #10b981 50%, #8b5cf6 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .gradient-bg {
+        background: linear-gradient(135deg, #0d9488 0%, #10b981 50%, #8b5cf6 100%);
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-hummingbird-slate font-sans antialiased">
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md border-b border-slate-200 z-50">
+      <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-2">
+          <img src="/assets/logo-icon.png" alt="Hummingbird Inc" class="h-9 w-auto" />
+          <span class="text-2xl font-display font-semibold tracking-tight text-hummingbird-indigo">Hummingbird</span>
+        </a>
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+          <a href="/" class="hover:text-hummingbird-teal transition-colors">Home</a>
+          <a href="/invest" class="hover:text-hummingbird-teal transition-colors">Invest</a>
+          <a href="/growth" class="text-hummingbird-teal">Growth</a>
+          <a href="/ai" class="hover:text-hummingbird-teal transition-colors">AI Studio</a>
+          <a href="/team" class="hover:text-hummingbird-teal transition-colors">Team</a>
+          <a href="/partners" class="hover:text-hummingbird-teal transition-colors">Partners</a>
+          <a href="/advisors" class="hover:text-hummingbird-teal transition-colors">Advisors</a>
+          <a href="/allies" class="hover:text-hummingbird-teal transition-colors">Allies</a>
+          <a href="/#about" class="hover:text-hummingbird-teal transition-colors">About</a>
+          <a href="/#contact" class="hover:text-hummingbird-teal transition-colors">Contact</a>
+        </div>
+        <a href="/ai" class="hidden md:inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-white gradient-bg rounded-full hover:shadow-lg hover:shadow-teal-500/25 transition-all">Book a Build Week</a>
+        <button id="mobile-menu-btn" aria-label="Open menu" class="md:hidden inline-flex items-center justify-center w-10 h-10 text-hummingbird-indigo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-200 px-6 py-4 flex flex-col gap-4 text-sm font-medium text-slate-600">
+        <a href="/" class="hover:text-hummingbird-teal transition-colors">Home</a>
+        <a href="/invest" class="hover:text-hummingbird-teal transition-colors">Invest</a>
+        <a href="/growth" class="text-hummingbird-teal">Growth</a>
+        <a href="/ai" class="hover:text-hummingbird-teal transition-colors">AI Studio</a>
+        <a href="/team" class="hover:text-hummingbird-teal transition-colors">Team</a>
+        <a href="/partners" class="hover:text-hummingbird-teal transition-colors">Partners</a>
+        <a href="/advisors" class="hover:text-hummingbird-teal transition-colors">Advisors</a>
+        <a href="/allies" class="hover:text-hummingbird-teal transition-colors">Allies</a>
+        <a href="/#about" class="hover:text-hummingbird-teal transition-colors">About</a>
+        <a href="/#contact" class="hover:text-hummingbird-teal transition-colors">Contact</a>
+      </div>
+    </nav>
+    <script>
+      document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+      });
+      document.querySelectorAll('#mobile-menu a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          document.getElementById('mobile-menu').classList.add('hidden');
+        });
+      });
+    </script>
+
+    <section class="relative pt-40 pb-20 overflow-hidden">
+      <div class="absolute inset-0 -z-10 opacity-30">
+        <div class="absolute top-10 left-10 w-72 h-72 bg-emerald-300 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-10 right-10 w-96 h-96 bg-violet-300 rounded-full blur-3xl"></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl">
+          <p class="text-sm font-semibold tracking-widest text-hummingbird-teal uppercase mb-4">Growth command center</p>
+          <h1 class="text-4xl md:text-6xl font-display font-semibold leading-tight text-hummingbird-indigo mb-6">Measured growth, every week</h1>
+          <p class="text-lg md:text-xl text-slate-600 leading-relaxed mb-8">This is where the work becomes visible. Funnel metrics, experiments, channels, and the weekly action list. No guesses. No vanity. Just numbers and decisions.</p>
+          <p id="last-updated" class="text-sm font-medium text-slate-500"></p>
+          <p id="data-disclaimer" class="text-sm text-slate-400 mt-1"></p>
+          <p id="data-error" class="text-sm text-red-600 mt-2"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-3 gap-8 items-start">
+          <div class="lg:col-span-2 p-8 rounded-3xl bg-slate-50 border border-slate-100">
+            <h2 class="text-2xl md:text-3xl font-display font-semibold text-hummingbird-indigo mb-6">The funnel</h2>
+            <div id="funnel-container" class="space-y-6">
+              <p class="text-slate-500">Loading funnel...</p>
+            </div>
+          </div>
+
+          <div class="p-8 rounded-3xl bg-hummingbird-indigo text-white">
+            <p class="text-sm font-semibold tracking-widest text-hummingbird-teal uppercase mb-4">North Star</p>
+            <h3 class="text-2xl font-display font-semibold mb-2">Weekly revenue</h3>
+            <p id="north-star-value" class="text-5xl font-display font-semibold mb-2">—</p>
+            <p class="text-slate-300 mb-6">Target: <span id="north-star-target">—</span></p>
+            <div class="w-full bg-white/10 rounded-full h-3 mb-2">
+              <div id="north-star-bar" class="gradient-bg h-3 rounded-full" style="width: 0%"></div>
+            </div>
+            <p id="north-star-progress" class="text-sm text-slate-300"></p>
+            <a href="/invest" class="inline-flex items-center text-sm font-medium text-hummingbird-teal hover:text-white transition-colors mt-6">View operating data &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-8 items-start">
+          <div class="p-8 rounded-3xl bg-white border border-slate-100">
+            <h2 class="text-2xl md:text-3xl font-display font-semibold text-hummingbird-indigo mb-6">Acquisition channels</h2>
+            <div id="channels-container" class="space-y-4">
+              <p class="text-slate-500">Loading channels...</p>
+            </div>
+          </div>
+
+          <div class="p-8 rounded-3xl bg-white border border-slate-100">
+            <h2 class="text-2xl md:text-3xl font-display font-semibold text-hummingbird-indigo mb-6">Weekly action checklist</h2>
+            <p class="text-slate-600 mb-6">The work that produces the numbers above. Update <code class="bg-slate-100 px-2 py-1 rounded text-sm">data/growth.json</code> as you complete items.</p>
+            <ul id="actions-container" class="space-y-3">
+              <li class="text-slate-500">Loading actions...</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl mb-12">
+          <p class="text-sm font-semibold tracking-widest text-hummingbird-teal uppercase mb-4">Experiments</p>
+          <h2 class="text-4xl md:text-5xl font-display font-semibold text-hummingbird-indigo mb-6">What we are testing</h2>
+          <p class="text-lg text-slate-600">Every growth activity is a bet. We state the hypothesis, the metric, and the decision before we run it.</p>
+        </div>
+
+        <div id="experiments-container" class="grid md:grid-cols-2 gap-8">
+          <p class="text-slate-500">Loading experiments...</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-hummingbird-indigo text-white">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <p class="text-sm font-semibold tracking-widest text-hummingbird-teal uppercase mb-4">The next move</p>
+        <h2 class="text-3xl md:text-4xl font-display font-semibold mb-6">Growth starts with one booked audit</h2>
+        <p class="text-lg text-slate-300 mb-8">The dashboard tells the truth. The work that changes it is outreach, content, and conversation. Book the first call today.</p>
+        <a href="/ai" class="inline-flex items-center justify-center px-10 py-4 text-lg font-medium text-hummingbird-indigo bg-white rounded-full hover:bg-slate-100 transition-all">Go to AI Studio</a>
+      </div>
+    </section>
+
+    <footer class="py-12 bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        <a href="/" class="text-2xl font-display font-semibold text-hummingbird-indigo">Hummingbird Inc</a>
+        <p class="text-sm text-slate-500">&copy; 2026 Hummingbird Inc. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', async function () {
+        try {
+          const res = await fetch('/data/growth.json?t=' + Date.now());
+          if (!res.ok) throw new Error('Failed to load growth data');
+          const data = await res.json();
+          renderGrowth(data);
+        } catch (err) {
+          document.getElementById('data-error').textContent = 'Unable to load live growth data. Please check back later.';
+          document.getElementById('last-updated').textContent = '';
+        }
+      });
+
+      function fmtMoney(val) {
+        if (val === null || val === undefined || val === '') return '—';
+        return '$' + Number(val).toLocaleString();
+      }
+      function fmtNumber(val) {
+        if (val === null || val === undefined || val === '') return '—';
+        return Number(val).toLocaleString();
+      }
+
+      function renderGrowth(data) {
+        document.getElementById('last-updated').textContent = 'Last updated: ' + (data.lastUpdated || 'Unknown') + ' — ' + (data.reportingPeriod || '');
+        document.getElementById('data-disclaimer').textContent = data.disclaimer || '';
+
+        const ns = data.northStar || {};
+        const nsValue = ns.value || 0;
+        const nsTarget = ns.target || 1;
+        const pct = Math.min(100, Math.round((nsValue / nsTarget) * 100));
+        document.getElementById('north-star-value').textContent = ns.isMoney !== false ? fmtMoney(nsValue) : fmtNumber(nsValue);
+        document.getElementById('north-star-target').textContent = ns.isMoney !== false ? fmtMoney(nsTarget) : fmtNumber(nsTarget);
+        document.getElementById('north-star-bar').style.width = pct + '%';
+        document.getElementById('north-star-progress').textContent = pct + '% of weekly target';
+
+        const funnel = document.getElementById('funnel-container');
+        funnel.innerHTML = '';
+        if (data.funnel && Array.isArray(data.funnel.stages)) {
+          const stages = data.funnel.stages;
+          stages.forEach(function (s, i) {
+            const target = s.target || 1;
+            const current = s.current || 0;
+            const progress = Math.min(100, Math.round((current / target) * 100));
+            const next = stages[i + 1];
+            let conversion = '—';
+            if (next && current > 0 && next.current !== null && next.current !== undefined) {
+              conversion = Math.round((next.current / current) * 100) + '% to ' + next.label;
+            }
+
+            const row = document.createElement('div');
+            row.className = 'p-6 rounded-2xl bg-white border border-slate-200';
+            row.innerHTML = '<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">' +
+              '<h3 class="text-lg font-display font-semibold text-hummingbird-indigo">' + (s.label || s.id) + '</h3>' +
+              '<div class="text-right"><p class="text-2xl font-display font-semibold text-hummingbird-indigo">' + (s.isMoney ? fmtMoney(current) : fmtNumber(current)) + '</p><p class="text-xs text-slate-500">Target: ' + (s.isMoney ? fmtMoney(target) : fmtNumber(target)) + '</p></div>' +
+              '</div>' +
+              '<div class="w-full bg-slate-100 rounded-full h-2 mb-2"><div class="gradient-bg h-2 rounded-full" style="width: ' + progress + '%"></div></div>' +
+              '<div class="flex items-center justify-between text-sm"><span class="text-slate-500">' + progress + '% of target</span><span class="text-slate-500">' + conversion + '</span></div>';
+            funnel.appendChild(row);
+          });
+        }
+
+        const channels = document.getElementById('channels-container');
+        channels.innerHTML = '';
+        if (Array.isArray(data.channels)) {
+          const max = Math.max(1, ...data.channels.map(c => c.leads || 0));
+          data.channels.forEach(function (c) {
+            const bar = c.leads ? Math.round((c.leads / max) * 100) : 0;
+            const row = document.createElement('div');
+            row.innerHTML = '<div class="flex items-center justify-between mb-1"><span class="text-slate-700 font-medium">' + c.name + '</span><span class="text-slate-600 font-semibold">' + fmtNumber(c.leads) + '</span></div>' +
+              '<div class="w-full bg-slate-100 rounded-full h-2"><div class="gradient-bg h-2 rounded-full" style="width: ' + bar + '%"></div></div>';
+            channels.appendChild(row);
+          });
+        }
+
+        const actions = document.getElementById('actions-container');
+        actions.innerHTML = '';
+        if (Array.isArray(data.actions)) {
+          data.actions.forEach(function (a) {
+            const statusColor = a.status === 'completed' ? 'bg-emerald-100 text-emerald-700' : (a.status === 'in_progress' ? 'bg-amber-100 text-amber-700' : 'bg-slate-100 text-slate-600');
+            const statusText = a.status === 'completed' ? 'Completed' : (a.status === 'in_progress' ? 'In progress' : 'Pending');
+            const li = document.createElement('li');
+            li.className = 'flex items-start gap-3';
+            li.innerHTML = '<span class="inline-flex px-2 py-1 rounded-full text-xs font-semibold ' + statusColor + '">' + statusText + '</span><span class="text-slate-700">' + a.task + (a.owner ? ' <span class="text-slate-400">(' + a.owner + ')</span>' : '') + '</span>';
+            actions.appendChild(li);
+          });
+        }
+
+        const experiments = document.getElementById('experiments-container');
+        experiments.innerHTML = '';
+        if (Array.isArray(data.experiments)) {
+          data.experiments.forEach(function (e) {
+            const statusColor = e.status === 'Completed' || e.status === 'completed' ? 'text-emerald-600 bg-emerald-50' : 'text-amber-600 bg-amber-50';
+            const card = document.createElement('div');
+            card.className = 'p-8 rounded-3xl bg-slate-50 border border-slate-100';
+            card.innerHTML = '<div class="flex items-center gap-3 mb-4"><span class="inline-flex px-3 py-1 rounded-full text-xs font-semibold ' + statusColor + '">' + (e.status || 'TBD') + '</span></div>' +
+              '<h3 class="text-xl font-display font-semibold text-hummingbird-indigo mb-3">' + e.name + '</h3>' +
+              '<p class="text-slate-600 mb-4"><strong class="text-slate-800">Hypothesis:</strong> ' + e.hypothesis + '</p>' +
+              '<div class="space-y-2 text-sm text-slate-600">' +
+              '<p><strong>Metric:</strong> ' + e.metric + '</p>' +
+              '<p><strong>Result:</strong> ' + (e.result === null || e.result === undefined || e.result === '' ? 'Pending' : e.result) + '</p>' +
+              '<p><strong>Decision:</strong> ' + (e.decision || 'TBD') + '</p>' +
+              '</div>';
+            experiments.appendChild(card);
+          });
+        }
+      }
+    </script>
+  </body>
+</html>
